@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.app.efficiclean.activities.GuestLogin"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <TextView
+        android:id="@+id/tvReportAbsence"
+        android:layout_width="244dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:text="Report absence of :"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorPrimary"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/svStaffList"
+        android:layout_width="246dp"
+        android:layout_height="288dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvReportAbsence">
+
+        <RadioGroup
+            android:id="@+id/rgStaffList"
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            tools:layout_editor_absoluteX="414dp"
+            tools:layout_editor_absoluteY="31dp">
+
+            <RadioButton
+                android:id="@+id/rbstaff1"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:background="@drawable/cell_border"
+                android:text="Conor Hanlon"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/rbstaff2"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:background="@drawable/cell_border"
+                android:text="Shauna Moran"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/rbstaff3"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:background="@drawable/cell_border"
+                android:text="David Weir"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/rbstaff4"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:background="@drawable/cell_border"
+                android:text="Shane Daly"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/rbstaff5"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:background="@drawable/cell_border"
+                android:text="Dean Lynch"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/rbstaff6"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:background="@drawable/cell_border"
+                android:text="Riain Condon"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/rbstaff7"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:background="@drawable/cell_border"
+                android:text="Rebecca Egan"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/rbstaff8"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:background="@drawable/cell_border"
+                android:text="Laura Quinn"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/rbstaff9"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:background="@drawable/cell_border"
+                android:text="Holly Moran"
+                android:textSize="20sp" />
+
+
+            <RadioButton
+                android:id="@+id/rbstaff10"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:background="@drawable/cell_border"
+                android:text="Noah Johan"
+                android:textSize="20sp" />
+
+        </RadioGroup>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btReportAbsenceSubmit"
+        android:layout_width="245dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/roundbutton"
+        android:text="Submit"
+        android:textColor="@color/myGold"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/svStaffList" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.app.efficiclean.activities.GuestLogin"
+        tools:layout_editor_absoluteY="81dp"
+        tools:layout_editor_absoluteX="0dp">
+
+    <TextView
+            android:text="Hazard Approval"
+            android:textSize="32sp"
+            android:textColor="@color/colorPrimary"
+            android:textAlignment="center"
+            android:layout_width="360dp"
+            android:layout_height="59dp"
+            android:id="@+id/tvHazardsApproval"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent" android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="7dp"/>
+
+    <TextView
+        android:id="@+id/tvRoomNumber"
+        android:layout_width="396dp"
+        android:layout_height="33dp"
+        android:text="Room 215 Description:"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvHazardsApproval" />
+
+    <TextView
+        android:id="@+id/tvDescriptionBox"
+        android:layout_width="364dp"
+        android:layout_height="124dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/textview_border"
+        android:ems="15"
+        android:padding="20sp"
+        android:text=""
+        android:textColor="#000"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvHazardsApproval" />
+
+    <CheckBox
+        android:id="@+id/cbApprove"
+        android:layout_width="187dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Approve"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        app:layout_constraintHorizontal_bias="0.143"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDescriptionBox" />
+
+    <CheckBox
+        android:id="@+id/cbDisapprove"
+        android:layout_width="205dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Disapprove"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        app:layout_constraintHorizontal_bias="0.159"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbApprove" />
+
+    <EditText
+        android:id="@+id/etReason"
+        android:layout_width="316dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/textview_border"
+        android:ems="15"
+        android:hint="Reason"
+        android:padding="20sp"
+        android:text=""
+        android:textColor="#000"
+        android:textColorHint="#000"
+        android:textSize="19sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbDisapprove" />
+
+    <Button
+        android:id="@+id/btHazardApprovalSubmit"
+        android:layout_width="179dp"
+        android:layout_height="47dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/roundbutton"
+        android:text="Submit"
+        android:textColor="@color/myGold"
+        android:textSize="20sp"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etReason" />
+
+</android.support.constraint.ConstraintLayout>

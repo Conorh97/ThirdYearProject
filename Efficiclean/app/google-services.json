@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "574703653724",
+    "firebase_url": "https://efficiclean.firebaseio.com",
+    "project_id": "efficiclean",
+    "storage_bucket": "efficiclean.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:574703653724:android:9776fd60ed9aff01",
+        "android_client_info": {
+          "package_name": "com.app.efficiclean"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "574703653724-7tbgtfgfq0kg2r322kv076n1oglscosf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.efficiclean",
+            "certificate_hash": "e0f692ed823d019a52d1c22ab1bf49e6a22126a5"
+          }
+        },
+        {
+          "client_id": "574703653724-6sptemc1t2t10lmevkpn3arbgrsogurd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBa0DZVgHNJIK1yyYW9gmXXCRfXMywSlQU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "574703653724-6sptemc1t2t10lmevkpn3arbgrsogurd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.app.efficiclean.activities.GuestLogin"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/tvTeam"
+        android:layout_width="993dp"
+        android:layout_height="145dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Team: Mary and John"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="53sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="164dp"
+        android:layout_height="76dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:text="Time: "
+        android:textAlignment="textStart"
+        android:textColor="@color/colorPrimary"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.42"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTeam" />
+
+
+    <EditText
+        android:id="@+id/etTime"
+        android:layout_width="231dp"
+        android:layout_height="106dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/textview_border"
+        android:ems="15"
+        android:hint="HHMM"
+        android:padding="25sp"
+        android:text=""
+        android:inputType="number"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.699"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTeam" />
+
+
+    <TextView
+        android:id="@+id/tvLength"
+        android:layout_width="386dp"
+        android:layout_height="97dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="60dp"
+        android:text="Length of break: "
+        android:textAlignment="textStart"
+        android:textColor="@color/colorPrimary"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.273"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTime" />
+
+    <RadioGroup
+        android:id="@+id/rgBreakLength"
+        android:layout_width="220dp"
+        android:layout_height="227dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.693"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etTime">
+
+        <RadioButton
+            android:id="@+id/rb15min"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="15 min"
+            android:textSize="45sp" />
+
+        <RadioButton
+            android:id="@+id/rb30min"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="30 min"
+            android:textSize="45sp" />
+
+        <RadioButton
+            android:id="@+id/rb45min"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="45 min"
+            android:textSize="45sp" />
+
+        <RadioButton
+            android:id="@+id/rb60min"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="60 min"
+            android:textSize="45sp" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btRequestBreakSubmit"
+        android:layout_width="257dp"
+        android:layout_height="76dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/roundbutton"
+        android:text="Submit"
+        android:textColor="@color/myGold"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgBreakLength" />
+
+
+</android.support.constraint.ConstraintLayout>

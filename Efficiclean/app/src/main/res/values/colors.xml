@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#A52A2A</color>
+    <color name="colorPrimaryDark">#8B0000</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="myGold">#FFD700</color>
+    <color name="loading">#00F5FF</color>
+    <color name="idle">#ffeeaa</color>
+    <color name="completed">#008000</color>
+    <color name="doNotDisturb">#000000</color>
+    <color name="waiting">#ffff00</color>
+    <color name="inProcess">#ff6600</color>
+    <color name="toBeCleaned">#ff0000</color>
+</resources>

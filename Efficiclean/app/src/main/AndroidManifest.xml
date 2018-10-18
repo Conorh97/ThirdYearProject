@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.app.efficiclean"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activities.GuestLogin">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.StaffLogin" />
+        <activity android:name=".activities.GuestHome"/>
+        <activity android:name=".activities.StaffHome" />
+        <activity android:name=".activities.SupervisorHome" />
+        <activity android:name=".activities.GuestPleaseService" />
+        <activity android:name=".activities.GuestDoNotDisturb" />
+        <activity android:name=".activities.GuestCheckingOut" />
+        <activity android:name=".activities.ReportAbsences" />
+        <activity android:name=".activities.ApproveSevereMess" />
+        <activity android:name=".activities.BreakApproval" />
+        <activity android:name=".activities.ServiceApproval" />
+        <activity android:name=".activities.HazardApprovalPage" />
+        <activity android:name=".activities.StaffRequestBreak" />
+        <activity android:name=".activities.StaffCurrentJob" />
+        <activity android:name=".activities.ReportHazard" />
+        <activity android:name=".activities.ReportSevereMess" />
+        <activity android:name=".activities.TodaysTeams" />
+        <activity android:name=".activities.SupervisorApprovals" />
+        <activity android:name=".activities.TeamBreakApproval" />
+        <activity android:name=".activities.HazardApprovalsList" />
+        <activity android:name=".activities.SevereMessApprovalsList" />
+        <activity android:name=".activities.MapView" />
+        <activity android:name=".activities.StaffMarkRoom" />
+        <activity android:name=".activities.GuestCompleted" />
+        <service
+            android:name=".services.ResetSystemStatus"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".services.TeamAllocator"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".services.UpdateJobPriorities"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".services.UpdateTeamPriorities"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE" />
+            </intent-filter>
+        </service>
+        <service
+                android:name=".services.UpdateBreakStatus"
+                android:exported="false">
+            <intent-filter>
+                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE" />
+            </intent-filter>
+        </service>
+        <service
+                android:name=".services.BreakAllocator"
+                android:exported="false">
+            <intent-filter>
+                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE" />
+            </intent-filter>
+        </service>
+        <service
+                android:name=".services.QueueHandlerService"
+                android:exported="false">
+            <intent-filter>
+                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE" />
+            </intent-filter>
+        </service>
+        <service
+                android:name=".services.CheckRooms"
+                android:exported="false">
+            <intent-filter>
+                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

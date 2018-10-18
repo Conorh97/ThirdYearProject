@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.app.efficiclean.activities.StaffHome">
+
+    <ScrollView
+        android:id="@+id/svSevereMessToBeApproved"
+        android:layout_width="293dp"
+        android:layout_height="393dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableLayout
+            android:id="@+id/tbSevereMessToBeApproved"
+            android:layout_width="276dp"
+            android:layout_height="394dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:stretchColumns="1"
+            android:visibility="visible"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+
+                <TextView
+                    android:id="@+id/tvSevereMessToBeApproved"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_span="3"
+                    android:background="@drawable/cell_border"
+                    android:gravity="center"
+                    android:padding="25dip"
+                    android:text="Severe Mess to be approved:"
+                    android:textStyle="bold"
+                    android:textSize="29sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/tvRow1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_span="3"
+                    android:background="@drawable/cell_border"
+                    android:gravity="center"
+                    android:padding="18dip"
+                    android:text="300"
+                    android:textSize="23sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/tvRow2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_span="3"
+                    android:background="@drawable/cell_border"
+                    android:gravity="center"
+                    android:padding="18dip"
+                    android:text="408"
+                    android:textSize="23sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/tvRow3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_span="3"
+                    android:background="@drawable/cell_border"
+                    android:gravity="center"
+                    android:padding="18dip"
+                    android:text="126"
+                    android:textSize="23sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/tvRow4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_span="3"
+                    android:background="@drawable/cell_border"
+                    android:gravity="center"
+                    android:padding="18dip"
+                    android:text="311"
+                    android:textSize="23sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/tvRow5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_span="3"
+                    android:background="@drawable/cell_border"
+                    android:gravity="center"
+                    android:padding="18dip"
+                    android:text="410"
+                    android:textSize="23sp" />
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
